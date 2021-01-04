@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/list.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0b4c8fc686.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="hamburger">
+            <button>
+                <span class="line-top"></span>
+                <span class="line-middle"></span>
+                <span class="line-bottom"></span>
+            </button>
+        </div>
+        <nav class="hamburger-container">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html">Catalogo</a></li>
+                <li><a href="./index.html">Moda</a></li>
+            </ul>
+            <div class="button-container">
+                <li><a href="./Registro.html" class="signIn-buttons">Registrarse</a></li>
+                <li><a href="./Usuario.html" class="signIn-buttons loging-button">Iniciar Sesión</a></li>
+            </div>
+        </nav>
+        <img src="./assets/img/converse.svg" alt="" width="150" height="40" class="logo-home">
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="main-bar-section">Inicio</a></li>
+                <li><a href="./index.html" class="main-bar-section">Catalogo</a></li>
+                <li><a href="./index.html" class="main-bar-section">Moda</a></li>
+            </ul>
+        </nav>
+
+        <div class="account-buttons">
+            <ul>
+                <li><a href="./Registro.html" class="signIn-buttons">Registrarse</a></li>
+                <li><a href="./Usuario.html" class="signIn-buttons loging-button">Iniciar Sesión</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="search-container-show">
+        <input type="text" placeholder="buscar..." required class="search-input" name="search">
+        <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <div class="container-view-options">
+
+        <div>
+            <i class="fas fa-list"></i>
+            <i class="fas fa-th"></i>
+        </div>
+        <div>
+            <label for="list-view">Vista: </label>
+            <span id="list-view" name="view">Lista</span>
+        </div>
+    </div>
+
+    <div class="hide-container">
+        <div class="close-button">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="filter-container">
+            <div class="search-container">
+                <input type="text" placeholder="buscar..." required class="search-input" name="search">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+    
+            <div class="sections-container styles">
+                <span>Estilo</span>
+                <div class="style-container">
+                    <input  id="Casual" type="radio" name="styles">
+                    <label for="Casual">Casual</label>
+                    <input id="Urbano" type="radio" name="styles">
+                    <label for="Urbano">Urbano</label>
+                    <input id="Deportivo" type="radio" name="styles">
+                    <label for="Deportivo">Deportivo</label>
+                </div>
+            </div>
+            <div class="sections-container">
+                <span>Color</span>
+                <div class="colors-container">
+                    <input  id="black" type="radio" name="colors">
+                    <label for="black" class="black" data-background-icon='&#xf00c;'></label>
+                    <input id="white" type="radio" name="colors">
+                    <label for="white" class="white" data-background-icon='&#xf00c;'></label>
+                    <input id="red" type="radio" name="colors">
+                    <label for="red" class="red" data-background-icon='&#xf00c;'></label>
+                    <input  id="orange" type="radio" name="colors">
+                    <label for="orange" class="orange" data-background-icon='&#xf00c;'></label>
+                    <input id="pink" type="radio" name="colors">
+                    <label for="pink" class="pink" data-background-icon='&#xf00c;'></label>
+                    <input id="blue" type="radio" name="colors">
+                    <label for="blue" class="blue" data-background-icon='&#xf00c;'></label>
+                </div>
+            </div>
+            <div class="sections-container">
+                <span>Talla</span>
+                <input id="talla" type="number" name="talla" min="1" max="31" placeholder="No." step=".5" value="5">
+            </div>
+            <div class="sections-container">
+                <span>Precio</span>
+                <div class="prices-container">
+                    <input type="text" class="range-price" placeholder="$800">
+                    <span>-</span>
+                    <input type="text" class="range-price" placeholder="$1500">
+                </div>
+            </div>
+            <div class="sections-container">
+                <span>Resultados</span>
+                <button class="button-search-filter">Buscar (56)</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="list-container">
+        <div class="item-list">
+            <div class="img-container">
+                <img src="./assets/img/img1.jpg" alt="">
+            </div>
+
+            <div class="content-item-description">
+                <h2>Converse Tenis bota negros</h2>
+                <div><span>De: </span><p> 1499.99</p></div>
+                <span>$1200.00</span>
+                <select name="color" class="color_item">
+                    <option disabled selected>Color: Negro</option>
+                    <option value="1">Negro</option>
+                    <option value="1">Negro</option>
+                    <option value="1">Negro</option>
+                    <option value="1">Negro</option>
+                </select>
+                <span>Disponibles (10)</span>
+            </div>
+
+            <div class="heart">
+                <input id="heart" type="checkbox" name="heart">
+                <label for="heart"><i class="fas fa-heart"></i></label>
+            </div>
+        </div>
+
+        <div class="item-list">
+
+        </div>
+
+        <div class="item-list">
+
+        </div>
+
+        <div class="item-list">
+
+        </div>
+        <div class="item-list">
+
+        </div>
+    </div>
+
+    <div class="button-filter">
+        <i class="fas fa-filter"></i>
+    </div>
+
+    <footer>
+        <div class="footer-options-container">
+            <div class="footer-options">
+                <a href="">Aplicación Móvil</a>
+                <a href="">Comunidad</a>
+                <a href="">Compañia</a>
+            </div>
+
+            <img src="./assets/img/converse_footer.svg" alt="" width="220" height="100">
+
+            <div class="footer-options right">
+                <a href="">Ayuda</a>
+                <a href="">Blog</a>
+                <a href="">Recursos</a>
+            </div>
+        </div>
+        <div class="social-networks">
+            <i class="fab fa-instagram-square"></i>
+           <i class="fab fa-facebook-square"></i>
+           <i class="fab fa-twitter-square"></i>
+           <i class="fab fa-google-plus-square"></i>
+        </div>
+        <p>●-  @Alonso COPYRIGHT 2020 TODOS LOS DERECHOS RESERVADOS -● </p>
+    </footer>
+
+    <script src="./assets/js/nav.js"></script>
+
+    <script>
+        const nav = document.querySelector("#hamburger button"),
+            drawer = document.querySelector(".hamburger-container"),
+            item_list = document.querySelector(".item-list"),
+            heart_btn = document.querySelector(".heart"),
+            color_item = document.querySelectorAll(".color_item"),
+            button_filter = document.querySelector(".button-filter"),
+            filter = document.querySelector(".hide-container"),
+            close_button = document.querySelector(".close-button"),
+            button = document.querySelector("#hamburger");
+
+        close_button.addEventListener("click", function(e){
+            filter.classList.toggle("show");
+        });
+        
+        button_filter.addEventListener("click", function(e){
+            filter.classList.toggle("show");
+        });
+
+        item_list.addEventListener("click", function(e){
+            window.location.href = "./item_view.html";
+            e.stopPropagation();
+        });
+
+        color_item.forEach(element => {
+            element.addEventListener("click", function(e){
+
+                e.stopPropagation();
+            });
+        });
+
+        heart_btn.addEventListener("click", function(e){
+
+            e.stopPropagation();
+        });
+
+        nav.addEventListener("click", function(e){
+            nav.classList.toggle("open");
+            drawer.classList.toggle("open");
+            button.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>

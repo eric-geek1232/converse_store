@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/item_view.css">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/0b4c8fc686.js" crossorigin="anonymous"></script>
+    <!-- Jquery -->
+	<script src="./assets/js/jquery-1.8.3.min.js"></script>
+	<!-- Elevate Zoom JS -->
+	<script src="./assets/js/jquery.elevateZoom-3.0.8.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div id="hamburger">
+            <button>
+                <span class="line-top"></span>
+                <span class="line-middle"></span>
+                <span class="line-bottom"></span>
+            </button>
+        </div>
+        <nav class="hamburger-container">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html">Catalogo</a></li>
+                <li><a href="./index.html">Moda</a></li>
+            </ul>
+            <div class="button-container">
+                <li><a href="./Registro.html" class="signIn-buttons">Registrarse</a></li>
+                <li><a href="./Usuario.html" class="signIn-buttons loging-button">Iniciar Sesión</a></li>
+            </div>
+        </nav>
+        <img src="./assets/img/converse.svg" alt="" width="150" height="40" class="logo-home">
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="main-bar-section">Inicio</a></li>
+                <li><a href="./index.html" class="main-bar-section">Catalogo</a></li>
+                <li><a href="./index.html" class="main-bar-section">Moda</a></li>
+            </ul>
+        </nav>
+
+        <div class="account-buttons">
+            <ul>
+                <li><a href="" class="signIn-buttons">Registrarse</a></li>
+                <li><a href="" class="signIn-buttons loging-button">Iniciar Sesión</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="slider-container">
+        <div class="product-small-img">
+            <img src="./assets/img/img1.jpg" data-zoom-image="./assets/img/img1_large.jpg" onmouseover="changeImage(this)">
+            <img src="./assets/img/img2.png" data-zoom-image="./assets/img/img2_large.jpg" onmouseover="changeImage(this)">
+            <img src="./assets/img/img3.jpg" data-zoom-image="./assets/img/img3_large.jpg" onmouseover="changeImage(this)">
+            <img src="./assets/img/img4.png"  data-zoom-image="./assets/img/img4_large.png" onmouseover="changeImage(this)">
+            <img src="./assets/img/img5.png"  data-zoom-image="./assets/img/img5_large.jpg" onmouseover="changeImage(this)">
+        </div>
+        <div class="product-container">
+            <img  src="./assets/img/img1.jpg" data-zoom-image="./assets/img/img1_large.jpg" id="zoom">
+            <div class="colors-container">
+                <input  id="black" type="radio" name="colors" checked>
+                <label for="black" class="black" data-background-icon='&#xf00c;'></label>
+                <input id="white" type="radio" name="colors">
+                <label for="white" class="white" data-background-icon='&#xf00c;'></label>
+                <input id="red" type="radio" name="colors">
+                <label for="red" class="red" data-background-icon='&#xf00c;'></label>
+                <input  id="orange" type="radio" name="colors">
+                <label for="orange" class="orange" data-background-icon='&#xf00c;'></label>
+                <input id="pink" type="radio" name="colors">
+                <label for="pink" class="pink" data-background-icon='&#xf00c;'></label>
+                <input id="blue" type="radio" name="colors">
+                <label for="blue" class="blue" data-background-icon='&#xf00c;'></label>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-details-container">
+        <div class="title">
+            <h1>Converse tenis bota negros</h1>
+        </div>
+        <span class="style-font">Modelo: 23131k</span>
+        <div class="old-price"><span class="style-font">De: <span class="style-font">$1500.00</span></span></div>
+        <span class="price">$1200.00</span>
+        <select name="color" id="">
+            <option disabled selected>Talla: 26</option>
+            <option value="1">26</option>
+            <option value="1">27</option>
+            <option value="1">28</option>
+            <option value="1">29</option>
+        </select>
+
+        <div class="buy-options">
+            <div class="quantity-product">
+                <label for="quantity">Cantidad</label>
+                <input id="quantity" type="number" placeholder="1" value="1">
+            </div>
+
+            <div class="quantity-product">
+                <span>Disponibles (10)</span>
+                <a href="./choose_address.html">comprar</a>
+            </div>
+        </div>
+
+        <span><i class="fas fa-lock"></i> Tu compra esta protegida</span>
+
+        <div class="burst">Oferta</div>
+        <div class="heart">
+            <input id="heart" type="checkbox" name="heart">
+            <label for="heart"><i class="fas fa-heart"></i></label>
+        </div>
+    </div>
+
+    <div class="item-description-container">
+        <input id="descripción" type="radio" name="tabs" checked>
+        <label for="descripción" class="left">Descripción</label>
+        <input id="valoraciones" type="radio" name="tabs">
+        <label for="valoraciones" class="right">Valoraciones</label>
+        <div class="container-tabs">
+            <div class="content">
+                <table class="table">
+                    <tr>
+                        <th>Marca</th>
+                        <td>Converse</td>
+                    </tr>
+                    <tr>
+                        <th>Modelo</th>
+                        <td>Bota</td>
+                    </tr>
+                    <tr>
+                        <th>Colores</th>
+                        <td>Negro, Azul, Rosa</td>
+                    </tr>
+                    <tr>
+                        <th>Talla</th>
+                        <td>26, 27, 28, 29</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="content">
+                <div class="califications-container">
+                    <div class="calification-total-container">
+                        <span class="calification-total">4.6</span>
+                        <div>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-user"></i>
+                                <span>1000 en total</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="bar-container">
+                            <span class="stars-number">5</span> 
+                            <span class="progress-5"></span>
+                        </div>
+                        <div class="bar-container">
+                            <span class="stars-number">4</span> 
+                            <span class="progress-4"></span>
+                        </div>
+                        <div class="bar-container">
+                            <span class="stars-number">3</span> 
+                            <span class="progress-3"></span>
+                        </div>
+                        <div class="bar-container">
+                            <span class="stars-number">2</span> 
+                            <span class="progress-2"></span>
+                        </div>
+                        <div class="bar-container">
+                            <span class="stars-number">1</span> 
+                            <span class="progress-1"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="coments-list">
+                    <div class="coment-item">
+                        <div class="profile-container">
+                            <i class="fas fa-user-circle profile-img"></i>
+                            <div class="profile-data">
+                                <span>name</span>
+                                <div class="user-calification">
+                                    <div><i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <span class="date-span">18/12/2020</span>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione voluptatum hic eum deleniti modi, facere quis amet in perspiciatis blanditiis adipisci sapiente aspernatur voluptatibus provident autem neque ut saepe temporibus?</p>
+                            </div>
+                        </div>
+                        <div class="like-or-dislike-container">
+                            <div>
+                                <i class="fas fa-thumbs-up"></i>
+                                <span>10</span>
+                            </div>
+                            <div>
+                                <i class="fas fa-thumbs-down"></i>
+                                <span>1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-options-container">
+            <div class="footer-options">
+                <a href="">Aplicación Móvil</a>
+                <a href="">Comunidad</a>
+                <a href="">Compañia</a>
+            </div>
+
+            <img src="./assets/img/converse_footer.svg" alt="" width="220" height="100">
+
+            <div class="footer-options right">
+                <a href="">Ayuda</a>
+                <a href="">Blog</a>
+                <a href="">Recursos</a>
+            </div>
+        </div>
+        <div class="social-networks">
+            <i class="fab fa-instagram-square"></i>
+           <i class="fab fa-facebook-square"></i>
+           <i class="fab fa-twitter-square"></i>
+           <i class="fab fa-google-plus-square"></i>
+        </div>
+        <p>●-  @Alonso COPYRIGHT 2020 TODOS LOS DERECHOS RESERVADOS -● </p>
+    </footer>
+
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/main.js"></script>
+    <script>
+        var nav = document.querySelector("#hamburger button");
+        var drawer = document.querySelector(".hamburger-container");
+        var button = document.querySelector("#hamburger");
+
+        nav.addEventListener("click", function(e){
+            nav.classList.toggle("open");
+            drawer.classList.toggle("open");
+            button.classList.toggle("open");
+        });
+
+    </script>
+    <script>
+		$("#zoom").elevateZoom({
+            zoomType				: "inner",
+            cursor: "crosshair"
+        });
+
+        function changeImage(smallImg){
+            var img_large = smallImg.getAttribute("data-zoom-image");
+            var imgs = document.querySelectorAll(".product-small-img > img");
+
+            var ez =   $('#zoom').data('elevateZoom');	  
+            ez.swaptheimage(smallImg.src, img_large); 
+
+            imgs.forEach(element => {
+                element.style.opacity = 0.6;
+            });
+            
+            smallImg.style.opacity = 1;
+        }
+	</script>
+</body>
+</html>

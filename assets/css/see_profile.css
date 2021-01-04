@@ -1,0 +1,238 @@
+body{
+    background: #ddeefc;
+    box-sizing: border-box;
+}
+
+.background-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(10, 10, 10, .5);
+    position: fixed;
+    z-index: 10;
+}
+
+.form-change-info{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    box-sizing: border-box;
+    width: 40%;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-btn{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    color: white;
+    background-color: red;
+    border-radius: 200px;
+}
+
+.close-btn:hover{
+    background-color: rgb(223, 9, 9);
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+#modify_text{
+    margin: 2em 0 10px 0;
+    font-size: 1.5em;
+}
+
+.input-contenedor{
+    width: 100%;
+	height: 50px;
+    max-width: 400px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.icon-dialog{
+    text-align: center;
+    font-size: 4em;
+    margin-top: 10px;
+}
+
+.input-contenedor:hover{
+    border-color: #93BDED;
+}
+
+.input-contenedor > input{
+    width: 100%;
+    height: 100%;
+    flex-grow: 2;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    border-radius: 0;
+    font-size: 1.2em;
+    margin: 0 2px;
+}
+
+.button-change-info{
+    margin-top: 1em;
+    height: 40px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #1c73e6;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon{
+    font-size: 1.5em;
+    margin: 10px;
+    color: gray;
+}
+
+.profile-container{
+    width: 100%;
+}
+
+.user-group{
+    margin: 5%;
+    border-radius: 5px;
+}
+
+.section{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FAFAFA;
+}
+
+.right-btn{
+    position: absolute;
+    right: 0;
+    font-size: 1.2em;
+}
+
+.item-acount{
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    border-bottom: solid 1px gainsboro;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.item-acount:hover{
+    background-color: rgb(150, 150, 150, .1);
+}
+
+.item-acount:nth-last-child(1){
+    border: none;
+}
+
+.card-item{
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    margin-top: 1em;
+}
+
+.item-name{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.item-acount > div{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.data-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-container{
+    height: 100%;
+}
+
+.circle{
+    padding: .5em;
+    background-color: aliceblue;
+    border-radius: 50%;
+    color: rgb(32, 32, 32);
+    font-size: 1.8em;
+    margin: 0 1em 0 .5em;
+}
+
+.address{
+    margin-right: 2em;
+    overflow: hidden;
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .form-change-info{
+        width: 90%;
+    }
+}
+
+
+.input-contenedor input{
+	width: 100%;
+	height: 100%;
+	background: none;
+	padding-top: 20px;
+	border: none;
+	outline: 0px;
+}
+.input-contenedor .lbl-nombre{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	border-bottom: 1px solid #c7c7c7;
+}
+.input-contenedor .lbl-nombre:after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+	width: 100%;
+	height: 100%;
+	border-bottom: 3px solid #2ecece;
+	transform: translateX(-100%);
+	transition: all 0.3s ease;
+}
+.text-nomb{
+	position: absolute;
+	bottom: 5px;
+	left: 0;
+	transition: all 0.3s ease;
+}
+
+.input-contenedor input:focus + .lbl-nombre .text-nomb,
+.input-contenedor input:valid + .lbl-nombre .text-nomb{
+	transform: translateY(-150%);
+	font-size: 14px;
+	color: #2ecece;
+}
+.input-contenedor input:focus + .lbl-nombre:after{
+	transform: translateX(0%);
+}

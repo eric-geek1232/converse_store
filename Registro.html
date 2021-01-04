@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <script src="https://kit.fontawesome.com/0b4c8fc686.js" crossorigin="anonymous"></script>
+   <!--nuestros link css se ponen despues de bootstrap para que nuestros estilos no se vean afectados
+    por los estilos de bootstrap-->
+   <link rel="stylesheet" href="./assets/css/main.css">
+   <link rel="stylesheet" href="assets/css/Registro.css">
+</head>
+<body style="background-image: url(assets/img/descarga.jpg);
+background-repeat: no-repeat;">
+    
+    <header>
+        <div id="hamburger">
+            <button>
+                <span class="line-top"></span>
+                <span class="line-middle"></span>
+                <span class="line-bottom"></span>
+            </button>
+        </div>
+        <nav class="hamburger-container">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html">Catalogo</a></li>
+                <li><a href="./index.html">Moda</a></li>
+            </ul>
+            <div class="button-container">
+                <li><a href="./Registro.html" class="signIn-buttons">Registrarse</a></li>
+                <li><a href="./Usuario.html" class="signIn-buttons loging-button">Iniciar Sesión</a></li>
+            </div>
+        </nav>
+        <img src="./assets/img/converse.svg" alt="" width="150" height="40" class="logo-home">
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="main-bar-section">Inicio</a></li>
+                <li><a href="./index.html" class="main-bar-section">Catalogo</a></li>
+                <li><a href="./index.html" class="main-bar-section">Moda</a></li>
+            </ul>
+        </nav>
+
+        <div class="account-buttons">
+            <ul>
+                <!--li><a href="" class="signIn-buttons">Registrarse</a></li-->
+                <li><a href="Usuario.html" class="signIn-buttons loging-button">Iniciar Sesión</a></li>
+            </ul>
+        </div>
+    </header>
+      
+    <div class="form-container">
+ 
+        <form class="formulario">
+          
+            <h1><strong>Registrate</strong></h1>
+            <div class="contenedor">
+               
+                <div class="input-contenedor">
+                    <i class="fas fa-user icon"></i>
+                    <input type="text" placeholder="Nombre">
+                </div>
+                <div class="input-contenedor">
+                  <i class="fas fa-user icon"></i>
+                  <input type="text" placeholder="Primer Apellido">
+                </div>
+                <div class="input-contenedor">
+                  <i class="fas fa-user icon"></i>
+                  <input type="text" placeholder="Segundo Apellido">
+                </div>
+                <div class="input-contenedor">
+                    <i class="fas fa-envelope icon"></i>
+                    <input type="text" placeholder="Correo Electronico">
+                </div>
+                <div class="input-contenedor">
+                    <i class="fas fa-key icon"></i>
+                    <input type="text" placeholder="Contraseña">
+                </div>
+                <input type="submit" value="Crear Cuenta" class="button">
+                <p><br>Al registrarte, aceptas nuestras Condiciones de uso y Política de Privacidad.</p>
+                <p>¿Ya tienes una Cuenta?<a class="link" href="Usuario.html">Iniciar Sesión</a></p>
+            </div>
+        </form>
+    </div>
+      
+       <footer>
+        <div class="footer-options-container">
+            <div class="footer-options">
+                <a href="">Aplicación Móvil</a>
+                <a href="">Comunidad</a>
+                <a href="">Compañia</a>
+            </div>
+
+            <img src="./assets/img/converse_footer.svg" alt="" width="220" height="100">
+
+            <div class="footer-options right">
+                <a href="">Ayuda</a>
+                <a href="">Blog</a>
+                <a href="">Recursos</a>
+            </div>
+        </div>
+        <div class="social-networks">
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-google-plus-square"></i>
+        </div>
+        <p>●-  @Alonso COPYRIGHT 2020 TODOS LOS DERECHOS RESERVADOS -● </p>
+    </footer>
+    <script src="./assets/js/nav.js"></script>
+    <script>
+        var nav = document.querySelector("#hamburger button");
+        var drawer = document.querySelector(".hamburger-container");
+        var button = document.querySelector("#hamburger");
+
+        nav.addEventListener("click", function(e){
+            nav.classList.toggle("open");
+            drawer.classList.toggle("open");
+            button.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>

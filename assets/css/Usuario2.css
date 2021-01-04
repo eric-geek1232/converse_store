@@ -1,0 +1,42 @@
+.user-img{
+    margin-top: -90px;
+    margin-bottom: 5px;
+}
+
+.img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-img i{
+    background-color: white;
+    padding: 1px;
+    font-size: 10em;
+    border-radius: 500px;
+    box-shadow: 0px 0px 6px #848484;
+}
+
+.formulario{
+    margin: 10% auto;
+}
+
+@media screen and (max-width: 1024px){
+    .formulario{
+        margin: 30% auto;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .formulario{
+        margin: 40% auto;
+    }
+
+    .user-img{
+        margin-top: -60px;
+    }
+
+    .user-img > i{
+        font-size: 6em;
+    }
+}

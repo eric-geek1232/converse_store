@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/choose_address.css">
+    <link rel="stylesheet" href="./assets/css/pay_bill.css">
+    <script src="https://kit.fontawesome.com/0b4c8fc686.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Liu+Jian+Mao+Cao&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/card_style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div id="hamburger">
+            <button>
+                <span class="line-top"></span>
+                <span class="line-middle"></span>
+                <span class="line-bottom"></span>
+            </button>
+        </div>
+        <nav class="hamburger-container">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html">Catalogo</a></li>
+                <li><a href="./index.html">Moda</a></li>
+            </ul>
+            <div class="button-container">
+                <li><a href="./Registro.html" class="signIn-buttons">Registrarse</a></li>
+                <li><a href="./Usuario.html" class="signIn-buttons loging-button">Iniciar Sesión</a></li>
+            </div>
+        </nav>
+        <img src="./assets/img/converse.svg" alt="" width="150" height="40" class="logo-home">
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="main-bar-section">Inicio</a></li>
+                <li><a href="./index.html" class="main-bar-section">Catalogo</a></li>
+                <li><a href="./index.html" class="main-bar-section">Moda</a></li>
+            </ul>
+        </nav>
+
+        <div class="account-buttons">
+            <ul>
+                <li><a href="" class="signIn-buttons">Registrarse</a></li>
+                <li><a href="" class="signIn-buttons loging-button">Iniciar Sesión</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="check-order">
+        <h1>¿Como quieres pagar?</h1>
+
+        <div class="list-container-address">
+            <div class="container-style-info">
+                <div class="main-card-container">
+                    <div class="check-container">
+                        <input id="radio_button" type="radio" name="check-card" checked>
+                        <label for="radio_button" class="label-check">
+                            <span class="indicator-check"></span>
+                            <span class="radio-button-style"></span>
+                            <i class="far fa-credit-card circle"></i>
+                            <span class="card-number">**** **** **** 1234</span>
+                        </label>
+                    </div>
+                </div>
+                <span class="edit-add-btn">
+                    <i class="fas fa-trash-alt"></i>Eliminar
+                </span>
+            </div>
+            <div class="container-style-info">
+                <div class="main-card-container">
+                    <div class="check-container">
+                        <input id="raio_button" type="radio" name="check-card">
+                        <label for="raio_button" class="label-check">
+                            <span class="indicator-check"></span>
+                            <span class="radio-button-style"></span>
+                            <i class="far fa-credit-card circle"></i>
+                            <span class="card-number">**** **** **** 1234</span>
+                        </label>
+                    </div>
+                </div>
+                <span class="edit-add-btn">
+                    <i class="fas fa-trash-alt"></i>Eliminar
+                </span>
+            </div>
+        </div>
+        
+        <div class="buttons-card-container">
+            <button class="open-form-btn" id="open-form-btn">
+                <i class="fas fa-plus"></i> Agregar tarjeta
+            </button>
+            <button class="continue" id="continue-btn">
+                Continuar
+            </button>
+        </div>
+
+        <div class="container">
+            <!-- form -->
+            <form action="" id="card-form" class="card-form">
+                <div class="group">
+                    <label for="inputNumber">Número Tarjeta</label>
+                    <input type="text" id="inputNumber" maxlength="19" autocomplete="off" required>
+                </div>
+                <div class="group">
+                    <label for="inputName">Nombre</label>
+                    <input type="text" id="inputName" maxlength="19" autocomplete="off" required>
+                </div>
+                <div class="flexbox">
+                    <div class="group expires">
+                        <label for="selectMes">Expiracion</label>
+                        <div class="flexbox">
+                            <div class="group-select">
+                                <select name="month" id="selectMonth">
+                                    <option disabled selected>Mes</option>
+                                </select>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div class="group-select">
+                                <select name="year" id="selectYear">
+                                    <option disabled selected>Año</option>
+                                </select>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="group ccv">
+                        <label for="inputCCV">CCV</label>
+                        <input type="text" id="inputCCV" maxlength="3" required>
+                    </div>
+                </div>
+                <button type="submit" class="send-btn">Continuar</button>
+            </form>
+
+            <!-- card -->
+            <section class="card" id="card">
+                <div class="front">
+                    <div class="logo-brand" id="logo-brand">
+                        <!-- <img src="img/logos/visa.png" alt=""> -->
+                    </div>
+                    <img src="./assets/img/chip-tarjeta.png" class="chip" alt="">
+                    <div class="data">
+                        <div class="group" id="number">
+                            <p class="label">Número Tarjeta</p>
+                            <p class="number">#### #### #### ####</p>
+                        </div>
+                        <div class="flexbox">
+                            <div class="group" id="name">
+                                <p class="label">Nombre Tarjeta</p>
+                                <p class="name">TU NOMBRE</p>
+                            </div>
+    
+                            <div class="group" id="expiration">
+                                <p class="label">Expiracion</p>
+                                <p class="expiration"><span class="month">MM</span> / <span class="year">AA</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="back">
+                    <div class="magnetic-bar"></div>
+                    <div class="data">
+                        <div class="group" id="signing">
+                            <p class="label">Firma</p>
+                            <div class="signing"><p class="signing-text"></p></div>
+                        </div>
+                        <div class="group" id="ccv">
+                            <p class="label">CCV</p>
+                            <p class="ccv"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="bill">
+        <h3>
+            Detalles de la compra
+        </h3>
+        <div>
+            <span>Productos(1)</span>
+            <span>$ 1200.00</span>
+        </div>
+        <div>
+            <span>Envio</span>
+            <span>$0</span>
+        </div>
+
+        <div>
+            <span>Total</span>
+            <span>$1200.00</span>
+        </div>
+    </div>
+
+    <section class="fixed-bill">
+        <div>
+            <span class="span-pagar">
+                PAGAS
+            </span>
+            <div class="price-to-pay">
+                $1200.00
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-options-container">
+            <div class="footer-options">
+                <a href="">Aplicación Móvil</a>
+                <a href="">Comunidad</a>
+                <a href="">Compañia</a>
+            </div>
+
+            <img src="./assets/img/converse_footer.svg" alt="" width="220" height="100">
+
+            <div class="footer-options right">
+                <a href="">Ayuda</a>
+                <a href="">Blog</a>
+                <a href="">Recursos</a>
+            </div>
+        </div>
+        <div class="social-networks">
+            <i class="fab fa-instagram-square"></i>
+           <i class="fab fa-facebook-square"></i>
+           <i class="fab fa-twitter-square"></i>
+           <i class="fab fa-google-plus-square"></i>
+        </div>
+        <p>●-  @Alonso COPYRIGHT 2020 TODOS LOS DERECHOS RESERVADOS -● </p>
+    </footer>
+
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <script>
+        const nav = document.querySelector("#hamburger button");
+        const drawer = document.querySelector(".hamburger-container");
+        const button = document.querySelector("#hamburger");
+        const pay_btn = document.querySelector(".continue");
+        const add_card = document.querySelector(".send-btn");
+        const delete_item = document.querySelectorAll(".edit-add-btn");
+
+        delete_item.forEach(element => {
+            element.addEventListener("click", function(e){
+                element.parentNode.remove();
+            });
+        });
+
+        add_card.addEventListener("click", function(e){
+            e.preventDefault();
+        });
+
+        pay_btn.addEventListener("click", function(e){
+            window.location.href = "./receipt.html";
+        });
+
+        nav.addEventListener("click", function(e){
+            nav.classList.toggle("open");
+            drawer.classList.toggle("open");
+            button.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>

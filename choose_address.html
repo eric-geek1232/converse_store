@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/choose_address.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <script src="https://kit.fontawesome.com/0b4c8fc686.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div id="hamburger">
+            <button>
+                <span class="line-top"></span>
+                <span class="line-middle"></span>
+                <span class="line-bottom"></span>
+            </button>
+        </div>
+        <nav class="hamburger-container">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html">Catalogo</a></li>
+                <li><a href="./index.html">Moda</a></li>
+            </ul>
+            <div class="button-container">
+                <li><a href="./Registro.html" class="signIn-buttons">Registrarse</a></li>
+                <li><a href="./Usuario.html" class="signIn-buttons loging-button">Iniciar Sesión</a></li>
+            </div>
+        </nav>
+        <img src="./assets/img/converse.svg" alt="" width="150" height="40" class="logo-home">
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="main-bar-section">Inicio</a></li>
+                <li><a href="./index.html" class="main-bar-section">Catalogo</a></li>
+                <li><a href="./index.html" class="main-bar-section">Moda</a></li>
+            </ul>
+        </nav>
+
+        <div class="account-buttons">
+            <ul>
+                <li><a href="./see_profile.html"><i class="far fa-user-circle account-btn"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="check-order">
+        <h1>¿Dondé quieres recibir tus pedidos?</h1>
+        <p>Recibe tus pedidos rapido y seguro</p>
+       <div class="list-container-address">
+            <div class="container-style-info">
+                <div class="main-address-container">
+                    <div class="check-container">
+                        <input id="address_RBtn" type="radio" name="checkAddress" checked>
+                        <label for="address_RBtn" class="label-check">
+                            <span class="indicator-check"></span>
+                            <span class="radio-button-style"></span>
+                            <div class="address-container">
+                                <span>CP:49600</span>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, impedit vero doloribus numquam culpa, saepe quia accusamus eum cumque vel dolor quas nostrum perferendis iure excepturi voluptates architecto expedita. Alias.</p>
+                           </div>
+                        </label>
+                    </div>
+                </div>
+                <a class="edit-add-btn" href="./Direccion.html">
+                    <i class="fas fa-pencil-alt"></i></i>Editar dirección
+                </a>
+            </div>
+            
+        </div>
+
+        <a class="add-new-address" href="./Direccion.html">
+            <i class="fas fa-plus"></i>Agregar dirección
+        </a>
+
+        <h2>Articulos</h2>
+
+        <div class="article-list">
+            <div class="article-item">
+                <div class="shipment-details">
+                    <span class="shipment-date">Llega hoy mismo</span>
+                    <div class="shipment-amount">
+                        <span class="shipment-state">GRATIS</span>
+                        <span class="shipment-state">
+                            envio gratis disponible
+                        </span>
+                    </div>
+                </div>
+                <div class="decription-article">
+                    <img src="./assets/img/img1.jpg" alt="" srcset="">
+                    <div class="info-article">
+                        <span>converse negros bota</span>
+                        <span>Cantidad: 1</span>
+                        <span>$1200.00 C/U</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a class="continue-btn" href="./pay_bill.html">
+            Continuar
+        </a>
+    </div>
+
+    <div class="bill">
+        <h3>
+            Detalles de la compra
+        </h3>
+        <div>
+            <span>Productos(1)</span>
+            <span>$ 1200.00</span>
+        </div>
+        <div>
+            <span>Envio</span>
+            <span>$0</span>
+        </div>
+
+        <div>
+            <span>Total</span>
+            <span>$1200.00</span>
+        </div>
+    </div>
+
+    <section class="fixed-bill">
+        <div>
+            <span class="span-pagar">
+                PAGAS
+            </span>
+            <div class="price-to-pay">
+                $1200.00
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-options-container">
+            <div class="footer-options">
+                <a href="">Aplicación Móvil</a>
+                <a href="">Comunidad</a>
+                <a href="">Compañia</a>
+            </div>
+
+            <img src="./assets/img/converse_footer.svg" alt="" width="220" height="100">
+
+            <div class="footer-options right">
+                <a href="">Ayuda</a>
+                <a href="">Blog</a>
+                <a href="">Recursos</a>
+            </div>
+        </div>
+        <div class="social-networks">
+            <i class="fab fa-instagram-square"></i>
+           <i class="fab fa-facebook-square"></i>
+           <i class="fab fa-twitter-square"></i>
+           <i class="fab fa-google-plus-square"></i>
+        </div>
+        <p>●-  @Alonso COPYRIGHT 2020 TODOS LOS DERECHOS RESERVADOS -● </p>
+    </footer>
+
+    <script src="./assets/js/nav.js"></script>
+
+    <script>
+        var nav = document.querySelector("#hamburger button");
+        var drawer = document.querySelector(".hamburger-container");
+        var button = document.querySelector("#hamburger");
+
+        nav.addEventListener("click", function(e){
+            nav.classList.toggle("open");
+            drawer.classList.toggle("open");
+            button.classList.toggle("open");
+        });
+    </script>
+</body>
+</html>

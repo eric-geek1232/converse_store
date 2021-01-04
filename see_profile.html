@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/see_profile.css">
+    <script src="https://kit.fontawesome.com/0b4c8fc686.js" crossorigin="anonymous"></script>
+    <title>Profile</title>
+</head>
+<body style="background-image: url(assets/img/descarga.jpg);
+background-repeat: no-repeat;">
+
+    <div class="background-container hide">
+        <form action="#" class="form-change-info">
+            <div class="close-btn">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <span id="modify_text">Modificar E-mail</span>
+            <div class="input-contenedor">
+                <input type="text" required id="main_input">
+	            <label class="lbl-nombre">
+		            <span class="text-nomb" id="main_input_label">example@gmail.com</span>
+	            </label>
+            </div>
+            <div class="input-contenedor">
+                <input type="text" required id="confirm_input">
+	            <label class="lbl-nombre">
+		            <span class="text-nomb" id="confirm_input_label">Confirma</span>
+	            </label>
+            </div>
+            <input type="submit" value="Cambiar" class="button-change-info" href="index.html">
+        </form>
+    </div>
+
+    <header>
+        <div id="hamburger">
+            <button>
+                <span class="line-top"></span>
+                <span class="line-middle"></span>
+                <span class="line-bottom"></span>
+            </button>
+        </div>
+        <nav class="hamburger-container">
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./index.html">Catalogo</a></li>
+                <li><a href="./index.html">Moda</a></li>
+            </ul>
+            <div class="button-container">
+                <li><a href="./Registro.html" class="signIn-buttons">Registrarse</a></li>
+                <li><a href="./Usuario.html" class="signIn-buttons loging-button">Iniciar Sesión</a></li>
+            </div>
+        </nav>
+        <img src="./assets/img/converse.svg" alt="" width="150" height="40" class="logo-home">
+        <nav>
+            <ul>
+                <li><a href="./index.html" class="main-bar-section">Inicio</a></li>
+                <li><a href="./index.html" class="main-bar-section">Catalogo</a></li>
+                <li><a href="./index.html" class="main-bar-section">Moda</a></li>
+            </ul>
+        </nav>
+
+        <div class="account-buttons">
+            <ul>
+                <li><a href=""><i class="far fa-user-circle account-btn"></i></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="profile-container">
+        <div class="user-group">
+
+            <span class="section">Cuenta</span>
+            <div class="card-item">
+                <div class="item-acount" id="email">
+                    <div>
+                        <div class="img-container">
+                            <i class="far fa-envelope circle"></i>
+                        </div>
+                        <div class="data-container">
+                            <span class="item-name">Email</span>
+                            <span>example@gmail.com</span>
+                        </div>
+                        <i class="fas fa-chevron-right right-btn"></i>
+                    </div>
+                </div>
+                <div class="item-acount" id="password">
+                    <div>
+                        <div class="img-container">
+                            <i class="fas fa-key circle"></i>
+                        </div>
+                        <div class="data-container">
+                            <span class="item-name">Password</span>
+                            <span>********</span>
+                        </div>
+                        <i class="fas fa-chevron-right right-btn"></i>
+                    </div>
+                </div>
+            </div>
+            <span class="section">Datos personales</span>
+            <div class="card-item">
+                <div class="item-acount" id="name">
+                    <div>
+                        <div class="img-container">
+                            <i class="far fa-address-card circle"></i>
+                        </div>
+                        <div class="data-container">
+                            <span class="item-name">Nombre</span>
+                            <span>Eric Alonso Avalos Jacobo</span>
+                        </div>
+                        <i class="fas fa-chevron-right right-btn"></i>
+                    </div>
+                </div>
+                <div class="item-acount items" id="phone">
+                    <div>
+                        <div class="img-container">
+                            <i class="fas fa-phone circle"></i>
+                        </div>
+                        <div class="data-container">
+                            <span class="item-name">Telefono</span>
+                            <span>3412323232</span>
+                        </div>
+                        <i class="fas fa-chevron-right right-btn"></i>
+                    </div>
+                </div>
+            </div>
+            <span class="section">Direcciones</span>
+            <div class="card-item">
+                <div class="item-acount" id="address">
+                    <div>
+                        <div class="img-container">
+                            <i class="fas fa-street-view circle"></i>
+                        </div>
+                        <div class="data-container">
+                            <span class="item-name">CP: 49600</span>
+                            <span class="address">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore similique aperiam cumque mollitia porro iure id vero repudiandae consequuntur in obcaecati, sunt hic, repellat minus perspiciatis dolorem aspernatur atque corrupti.</span>
+                        </div>
+                        <i class="fas fa-chevron-right right-btn"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-options-container">
+            <div class="footer-options">
+                <a href="">Aplicación Móvil</a>
+                <a href="">Comunidad</a>
+                <a href="">Compañia</a>
+            </div>
+
+            <img src="./assets/img/converse_footer.svg" alt="" width="220" height="100">
+
+            <div class="footer-options right">
+                <a href="">Ayuda</a>
+                <a href="">Blog</a>
+                <a href="">Recursos</a>
+            </div>
+        </div>
+        <div class="social-networks">
+            <i class="fab fa-instagram-square"></i>
+           <i class="fab fa-facebook-square"></i>
+           <i class="fab fa-twitter-square"></i>
+           <i class="fab fa-google-plus-square"></i>
+        </div>
+        <p>●-  @Alonso COPYRIGHT 2020 TODOS LOS DERECHOS RESERVADOS -● </p>
+    </footer>
+    
+    <script src="./assets/js/nav.js"></script>
+
+    <script>
+        var nav = document.querySelector("#hamburger button");
+        var drawer = document.querySelector(".hamburger-container");
+        var button = document.querySelector("#hamburger");
+        const close_btn = document.querySelector(".close-btn");
+        const phone = document.getElementById("phone");
+        const email = document.getElementById("email");
+        const password = document.getElementById("password");
+        const container_form = document.querySelector(".background-container");
+        const change_name = document.getElementById("name");
+        const change_address = document.getElementById("address");
+        const main_input = document.getElementById("main_input");
+        const confirm_input = document.getElementById("confirm_input");
+        const modify_text = document.getElementById("modify_text");
+        const main_input_label = document.getElementById("main_input_label");
+
+        phone.addEventListener("click", function(e){
+            container_form.classList.remove("hide");
+            setInputs("tel", "Numero de telefono", "Telefono");  
+        });
+
+        email.addEventListener("click", function(e){
+            container_form.classList.remove("hide");
+            setInputs("text", "example@gmail.com", "E-mail");  
+        });
+
+        password.addEventListener("click", function(e){
+            container_form.classList.remove("hide");
+            setInputs("password", "password", "Contraseña");           
+        });
+
+        function setInputs(type, example, modify){
+            main_input.type = type;
+            main_input_label.innerHTML = example
+            confirm_input.type = type;
+            modify_text.innerHTML = "Modificar " + modify;
+        }
+
+        function cleanInputs(){
+            main_input.value = "";
+            confirm_input.value = "";
+        }
+
+        close_btn.addEventListener("click", function(e){
+            container_form.classList.add("hide");
+            cleanInputs();
+        });
+
+        nav.addEventListener("click", function(e){
+            nav.classList.toggle("open");
+            drawer.classList.toggle("open");
+            button.classList.toggle("open");
+        });
+
+        change_name.addEventListener("click", function(e){
+            container_form.classList.remove("hide");
+            setInputs("text", "Nuevo nombre", "Nombre");  
+        });
+
+        change_address.addEventListener("click", function(e){
+            window.location.href = "./Direccion.html";
+        });
+        
+    </script>
+</body>
+</html>
